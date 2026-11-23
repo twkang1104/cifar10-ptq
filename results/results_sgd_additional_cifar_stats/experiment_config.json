@@ -1,0 +1,32 @@
+{
+  "seed": 42,
+  "normalization_mode": "cifar_stats",
+  "normalization_mean": [
+    0.4914,
+    0.4822,
+    0.4465
+  ],
+  "normalization_std": [
+    0.247,
+    0.2435,
+    0.2616
+  ],
+  "batch_size": 128,
+  "epochs": 150,
+  "optimizer": "SGD + momentum=0.9 + Nesterov",
+  "learning_rate": 0.05,
+  "weight_decay": 0.0005,
+  "scheduler": "5-epoch LinearLR warm-up (start_factor=0.2) + CosineAnnealingLR",
+  "min_lr": 0.0001,
+  "augmentation": "RandomCrop(32,padding=4) + RandomHorizontalFlip(0.5)",
+  "train_val_test": [
+    45000,
+    5000,
+    10000
+  ],
+  "amp": true,
+  "num_workers": 4,
+  "quant_backend": "x86",
+  "calibration_images": 2050,
+  "cpu_threads": 1
+}

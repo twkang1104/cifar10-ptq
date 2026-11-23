@@ -1,0 +1,3 @@
+model,parameters,best_epoch,best_val_accuracy_pct,best_val_loss,training_minutes,checkpoint,normalization_mode
+small_resnet,308650,138,90.43999910354614,0.3119654357433319,9.260782160268475,checkpoints_sgd_additional_cifar_stats/small_resnet_best.pth,cifar_stats
+ds_compact,31946,144,84.53999757766724,0.4518570303916931,8.326460852931875,checkpoints_sgd_additional_cifar_stats/ds_compact_best.pth,cifar_stats

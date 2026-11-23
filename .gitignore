@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset (download locally; do not commit CIFAR-10 files)
+data/
+*.tar.gz
+
+# Logs and temporary files
+*.log
+.DS_Store
+*.tmp
+
+# Optional: uncomment to exclude model checkpoints from GitHub
+# checkpoints/
+# checkpoints_*/
